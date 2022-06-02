@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    padding: 3rem;
+    background-color: black;
+}
+.welcome   {
+    color: white;
+    text-align: center;
+    font-size: 50PX;
+    letter-spacing: 1rem;
+}
+
+main{
+    margin: 0 auto;
+    width: 80%;
+}
+
+.profile-card{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    /* box-shadow: -11px 11px 31px 4px rgba(0,0,0,0.55);
+-webkit-box-shadow: -11px 11px 31px 4px rgba(0,0,0,0.55);
+-moz-box-shadow: -11px 11px 31px 4px rgba(0,0,0,0.55); */
+overflow: hidden;
+}
+
+.profile-card-left{
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 100%); 
+    -webkit-mask-image: linear-gradient(black 80%, transparent);
+    mask-image: linear-gradient(black 80%, transparent);
+}
+.profile-card-right{
+    padding: 1rem;
+}
+.border-bottom{
+    font-weight: 100;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid black;
+}
+.profile-card-right h4{
+    color: rgb(183, 185, 185);
+}
+.profile-card-right h3{
+    font-weight: 100;
+}
+.profile-card-right .icon{
+    /* display: block; */
+    width: 50px;
+}
+.fa {
+    padding: 1rem;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 auto;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  .fa-github{
+      background: rgb(54, 54, 54);
+      color: white;
+  }
+  .fa-link{
+    background: rgb(54, 54, 54);
+    color: white;
+}
+
+#about{
+    padding: 1rem;
+    margin: 0 auto;
+}
+#about p{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+}
+
+@media screen and (max-width: 650px) {
+    .profile-card{
+
+        flex-direction: column;
+
+    }
+    .welcome   {
+        font-size: 30PX;
+        letter-spacing: 0.5rem;
+    }
+}
